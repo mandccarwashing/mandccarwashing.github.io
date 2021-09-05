@@ -20,6 +20,27 @@ body {
   overflow: hidden;
 }
 
+#hero nav {
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+  font-size: 2vh;
+}
+
+#hero nav ul {
+  padding: 15px;
+  padding-right: 30px;
+  float: right;
+}
+
+#hero nav ul li {
+  display: inline;
+}
+
+#hero nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 #hero .custom-shape-divider-bottom-1630614203 {
   position: absolute;
   bottom: 0;
