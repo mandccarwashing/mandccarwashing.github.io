@@ -103,44 +103,77 @@ body {
   width: 100%;
   padding-top: 1vh;
   font-family: "Nunito Sans", sans-serif;
-  #aboutText {
-      padding: 3vw;
-    #abt {
-        font-family: 'Roboto', sans-serif;
-        font-size: 4.5vh;
+  font-size: 2.1vh;
+
+  table {
+    // display: block;
+    border-collapse: separate;
+    border-spacing: 0;
+    // min-width: 350px;
+    table-layout: auto;
+    width: 50%;
+    text-align: center;
+    // border: solid 1px;
+    // padding-top: 10vh;
+    color: #393939;
+    max-height: 80vh;
+    // overflow: hidden;
+    overflow-y: scroll;
+
+    tr th,
+    tr td {
+        // border-right: 1px solid #bbb;
+        // border-bottom: 1px solid #bbb;
+        padding: 0.7vh;
+        // background: white;
     }
-    #desc {
-        padding-top: 1vh;
-        font-family: "Nunito Sans", sans-serif;
-        font-size: 2.5vh;
+    tr:nth-child(even) {
+        background: rgba($color: #dbdbdb, $alpha: 0.9);
     }
-    #reviews {
-        #stars {
-            font-size: 2.5vh;
-        }
-        width: 100%;
-        td {
-            padding-top: 10vh;
-        }
-        #review {
-            text-align: center;
-            #quote {
-                p {
-                    font-size: 2.5vh;
-                    .quotemark {
-                        font-size: 1.5vh;
-                        vertical-align: super;
-                    }
-                }
-                
-            }
-            #person {
-                font-size: 2vh;
-                font-style: italic;
-            }
-        }
+    tr:nth-child(odd) {
+        background: rgba($color: #eeeeee, $alpha: 0.9);
     }
-  }
+    tr th {
+        background: #ff8800;
+        text-align: left;
+        height: 2vh;
+        color: rgba($color: #ffffff, $alpha: 1);
+        // position: sticky;
+        text-align: center;
+        
+    }
+
+    /* top-left border-radius */
+    tr:first-child th:first-child {
+        border-top-left-radius: 6px;
+    }
+
+    /* top-right border-radius */
+    tr:first-child th:last-child {
+        border-top-right-radius: 6px;
+    }
+
+    /* bottom-left border-radius */
+    tr:last-child td:first-child {
+        border-bottom-left-radius: 6px;
+    }
+
+    /* bottom-right border-radius */
+    tr:last-child td:last-child {
+        border-bottom-right-radius: 6px;
+    }
+
+    thead tr th {
+        position: sticky;
+        z-index: 100;
+        top: 0;
+        
+    }
+    tr td {
+        padding: 1.7vh 0;
+    }
+}
+  
 }
 
 @-webkit-keyframes arrowBounce {

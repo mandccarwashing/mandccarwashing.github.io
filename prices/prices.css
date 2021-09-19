@@ -42,6 +42,28 @@ body {
   text-decoration: none;
 }
 
+#hero .custom-shape-divider-bottom-1630614203 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#hero .custom-shape-divider-bottom-1630614203 svg {
+  position: relative;
+  display: block;
+  width: calc(100%);
+  height: 8vh;
+}
+
+#hero .custom-shape-divider-bottom-1630614203 .shape-fill {
+  fill: #ffffff;
+}
+
 #hero #text {
   position: absolute;
   top: 50%;
@@ -80,9 +102,75 @@ body {
   color: white;
 }
 
-#wrapper {
+#about {
   height: 100vh;
   width: 100%;
+  padding-top: 1vh;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.1vh;
+}
+
+#about table {
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: auto;
+  width: 50%;
+  text-align: center;
+  color: #393939;
+  max-height: 80vh;
+  overflow-y: scroll;
+  /* top-left border-radius */
+  /* top-right border-radius */
+  /* bottom-left border-radius */
+  /* bottom-right border-radius */
+}
+
+#about table tr th,
+#about table tr td {
+  padding: 0.7vh;
+}
+
+#about table tr:nth-child(even) {
+  background: rgba(219, 219, 219, 0.9);
+}
+
+#about table tr:nth-child(odd) {
+  background: rgba(238, 238, 238, 0.9);
+}
+
+#about table tr th {
+  background: #ff8800;
+  text-align: left;
+  height: 2vh;
+  color: white;
+  text-align: center;
+}
+
+#about table tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+
+#about table tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+
+#about table tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+
+#about table tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
+
+#about table thead tr th {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+#about table tr td {
+  padding: 1.7vh 0;
 }
 
 @-webkit-keyframes arrowBounce {
@@ -122,4 +210,4 @@ body {
             transform: translate(0, 0px);
   }
 }
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=prices.css.map */
